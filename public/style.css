@@ -1,0 +1,209 @@
+:root{
+  --font-hs: 'Ubunto', sans-serif;
+} 
+
+*{
+  box-sizing: border-box;
+}
+
+h1{
+  font-family: var(--font-hs);
+  font-weight: 700;
+  color:black ;
+
+  margin-left: 15px;
+
+  font-size: 18px;
+  margin-top: 9px ;
+}
+
+body{
+  background: #f0f0f5;
+  -webkit-font-smoothing: antialiased;
+}
+
+#page-home{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+}
+
+#page-home .content{
+  width: 90%;
+  
+  
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#page-home header{
+    margin-top: 15px;
+
+    width: 100%;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between;*/
+
+    background: rgb(109, 115, 117);
+
+    border-radius: 8px;
+  }
+
+  #page-home header img{
+    width: 20px;
+    height: 20px;
+
+    margin: 5px;
+  }
+
+  #page-home header h6{
+    color: white;
+    font-family: var(--font-hs);
+
+    font-weight: 500;
+    
+  }
+
+  #page-home .contentMaster{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: 90%;
+
+    margin: 0 auto;
+
+    justify-content: center;
+
+  }
+
+  #page-home .calc{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1100px;
+    
+
+    margin: 15px auto 0 auto;
+
+    border-radius: 8px;
+
+
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    margin: 0 0 5px 5px;
+    
+
+    background-color: white;
+
+    border-radius: 8px 8px 0 0;
+    border: 1px solid #F4F6F7 ;
+  }
+
+  form fieldset{
+    display: flex;
+    
+    border: 0;
+    
+  }
+
+  form .form{
+    display: flex;   
+    flex-direction: column;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+
+    margin: 15px;
+  }
+
+.form label{
+    font-size: 20px;
+
+    margin: 5px;
+}
+
+.form input{
+  height: 20px;
+  width: 80%;
+  border-radius: 8px;
+  border: 0;
+  
+  
+  background-color: #f4f6f7;
+
+  padding: 5px;
+}
+
+.form input:hover{
+  background-color: lightgray;
+}
+
+form .botaoSpan{
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+}
+
+form .botaoSpan button{
+
+  border-radius: 8px;
+  border: 0;
+
+  transition: 400ms;
+
+}
+
+form .botaoSpan button:hover{
+  background-color: lightgray;
+}
+
+form .botaoSpan span{
+  font-family: Ubunto, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+
+  margin-right: 30px;
+}
+
+
+#page-home .resultado{
+  width: 90%;
+  max-width: 1100px;
+  margin-top: 4%;
+
+  background-color: white;
+
+  border-radius: 8px;
+
+}
+
+.resultado h1{
+  
+  font-weight: 700;
+}
+  
+.resultado ul{
+    margin: 5px 0 0 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.resultado ul li{
+    font-family: var(--font-hs);
+}

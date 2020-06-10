@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Índice de massa corporal</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" type="text/css" href="/style.css" >
+  <link rel="stylesheet" type="text/css" href="/responsive.css">
+</head>
+
+<body>
+      <div id="page-home">
+        <div class="content">
+          <header>
+            <img src="assets/heart.svg" alt="menu-superior">
+            <h6>Índice de massa corporal - IMC</h6>
+            <h5></h5>
+          </header>
+        </div>
+        <div class="contentMaster">
+          <div class="calc">
+            <h1>Preencha com seus dados</h1>
+            <form  name="form">
+              <fieldset>
+                <div class="form">
+                  <label for="textNome">Digite seu nome</label>
+                  <input type="textNome"  id="textNome" required />
+                </div>  
+
+                <div class="form">
+                  <label for="textPeso">Digite seu peso</label>
+                  <input type="text" id="textPeso" required/>
+                </div>
+
+                <div class="form">
+                  <label for="textAltura">Digite sua altura</label>
+                  <input type="text" id="textAltura" required/>
+                </div>
+                <div class="botaoSpan">
+                  <button type="submit">Calcular</button>
+                  
+                </div>
+              
+            </fieldset>
+          </form>
+          </div>
+    
+          <div class="resultado">
+            <div>
+              <h1>Resultado:</h1>
+              <ul id="lista"></ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+  <script src="/scripts/main.js"></script>
+
+</body>
+
+</html>
