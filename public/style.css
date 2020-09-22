@@ -1,5 +1,5 @@
 :root{
-  --font-hs: 'Ubunto', sans-serif;
+  --font-hs: 'Kumbh Sans', sans-serif;
 } 
 
 *{
@@ -11,9 +11,9 @@ h1{
   font-weight: 700;
   color:black ;
 
-  margin-left: 15px;
+  margin-left: 5px;
 
-  font-size: 18px;
+  font-size: 15px;
   margin-top: 9px ;
 }
 
@@ -32,10 +32,8 @@ body{
 }
 
 #page-home .content{
-  width: 90%;
+  width: 90vw;
   
-  
-
   margin: 0 auto;
 
   display: flex;
@@ -52,23 +50,25 @@ body{
     align-items: center;
     /*justify-content: space-between;*/
 
-    background: rgb(109, 115, 117);
+    background: #4FC3F7;
 
-    border-radius: 8px;
+    border-radius: 5px;
   }
 
   #page-home header img{
     width: 20px;
     height: 20px;
-
-    margin: 5px;
+    
+    margin: 0 0 2px 5px;
   }
 
   #page-home header h6{
     color: white;
+    font-size: 16px;
     font-family: var(--font-hs);
+    font-weight: bold;
 
-    font-weight: 500;
+    margin-left: 5px;
     
   }
 
@@ -76,7 +76,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    width: 90%;
+    width: 90vw;
 
     margin: 0 auto;
 
@@ -91,9 +91,9 @@ body{
     max-width: 1100px;
     
 
-    margin: 15px auto 0 auto;
+    margin: 15px auto 0;
 
-    border-radius: 8px;
+    /*border-radius: 8px;*/
 
 
   }
@@ -103,18 +103,13 @@ body{
     flex-direction: column;
     width: 100%;
 
-    margin: 0 0 5px 5px;
-    
-
     background-color: white;
-
-    border-radius: 8px 8px 0 0;
-    border: 1px solid #F4F6F7 ;
+    
   }
 
   form fieldset{
     display: flex;
-    
+    flex-direction: column;
     border: 0;
     
   }
@@ -126,30 +121,43 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 
-    margin: 15px;
+    margin: 2px;
   }
 
 .form label{
-    font-size: 20px;
+    font-size: 16px;
 
-    margin: 5px;
+    margin: 5px 5px 5px 0;
 }
 
 .form input{
   height: 20px;
-  width: 80%;
-  border-radius: 8px;
+  width: 10ch;
+  border-radius: 3px;
   border: 0;
   
+  outline: 0;
   
   background-color: #f4f6f7;
+  transition: 0.2s;
 
   padding: 5px;
 }
 
 .form input:hover{
   background-color: lightgray;
+  cursor: pointer;
 }
+
+.form input#textNome{
+  width: 35ch;
+}
+
+.form input:focus{
+  border: blue;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
 
 form .botaoSpan{
   display: flex;
@@ -158,38 +166,47 @@ form .botaoSpan{
 
   justify-content: space-between;
 
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 form .botaoSpan button{
+  height: 4vh;
 
+  background: #4FC3F7;
+  color: #fff;
+  
   border-radius: 8px;
   border: 0;
 
   transition: 400ms;
 
+  
 }
 
 form .botaoSpan button:hover{
   background-color: lightgray;
+  color: #000;
+  cursor: pointer;
 }
 
 form .botaoSpan span{
-  font-family: Ubunto, sans-serif;
+  font-family: var(--font-hs);
   font-weight: 700;
-  font-size: 15px;
+  font-size: 10px;
 
   margin-right: 30px;
+  margin-left: 15px;
 }
 
 
 #page-home .resultado{
   width: 90%;
   max-width: 1100px;
-  margin-top: 4%;
-
+  
   background-color: white;
 
-  border-radius: 8px;
+  margin: 15px 0 0 5px;
 
 }
 

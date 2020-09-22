@@ -10,12 +10,16 @@
 
     #page-home .content{
        width: 90%; 
-       
 
     }
 
+    #page-home .contentMaster{
+        width: 90vw;
+        height: 50%;
+    }
+
     #page-home .calc{
-       margin: 5px;
+       margin-top: 10%;
         
         
     }
@@ -25,13 +29,14 @@
     }
 
     form{
-        width: auto;
 
-        margin: 0;
+        height: 100%;
     }
 
     form fieldset{
         margin: 0;
+        height: 20vh;
+        flex-direction: column;
     }
 
     form .form{
@@ -42,7 +47,7 @@
     }
 
     form .botaoSpan{
-        width: 90%;
+        width: 45%;
         
         flex-direction: column;
 
@@ -71,9 +76,8 @@
 
     .form input{
 
-        width: 110px;
-        height: 10px;
-        
+        width: 130px;
+        height: 25%;
 
         border-radius: 8px;
     }
@@ -92,4 +96,33 @@
 
 
 
+}
+
+@media(max-width: 770px){
+
+    #page-home .contentMaster{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    #page-home .calc{
+        height: 100%;
+
+        margin-top: 1%;
+        margin-bottom: 10px;
+    }
+
+    .form input#textNome{
+        width: 32ch;
+    }
+
+    #page-home .resultado{
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:370px){
+    .form input#textNome{
+        width: 25ch;
+    }
 }
